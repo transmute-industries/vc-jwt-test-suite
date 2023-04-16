@@ -23,5 +23,6 @@ jobs:
         with:
           commit_message: Update sample test results
           file_pattern: 'data/outputs/sample/*'
+          add_options: '-u'
           push_options: '--force'
           branch: gh-pages
