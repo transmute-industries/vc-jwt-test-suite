@@ -1,5 +1,7 @@
 # TODO
 
+[![Sample](https://github.com/transmute-industries/vc-jwt-test-suite/actions/workflows/sample.yml/badge.svg)](https://github.com/transmute-industries/vc-jwt-test-suite/actions/workflows/sample.yml)
+
 ## Docker Basics
 
 ```sh
