@@ -15,4 +15,4 @@ jobs:
         with:
           commit_message: Update sample test results
           file_pattern: 'data/implementations/sample/*'
-          branch: gh-pages
+          branch: main
