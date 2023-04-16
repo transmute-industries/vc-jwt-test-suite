@@ -9,3 +9,9 @@ npm run cli -- credential create \
 --output './data/verifiable-credential.json' \
 --key './data/key.json'
 ```
+
+```sh
+npm run cli -- credential verify \
+--input './data/verifiable-credential.json' \
+--output './data/verifiable-credential.verified.json'
+```

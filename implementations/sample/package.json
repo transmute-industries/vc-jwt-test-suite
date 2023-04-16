@@ -4,9 +4,9 @@
   "description": "",
   "main": "bin.js",
   "dependencies": {
+    "jose": "^4.14.0",
     "yargs": "^17.7.1"
   },
-  "devDependencies": {},
   "scripts": {
     "cli": "node ./bin.js"
   },
