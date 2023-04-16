@@ -6,7 +6,7 @@ jobs:
     env:
       IMPLEMENTATION: sample
       INPUT: /data/credentials/credential-0.json
-      OUTPUT: /data/implementations/$IMPLEMENTATION/credential-0--key-0-p256.json
+      OUTPUT: /data/implementations/${{ env.IMPLEMENTATION }}/credential-0--key-0-p256.json
       KEY: /data/keys/key-0-p256.json
     steps:
       - uses: actions/checkout@v3
