@@ -8,9 +8,12 @@
 | [![Sample](https://github.com/transmute-industries/vc-jwt-test-suite/actions/workflows/sample.yml/badge.svg)](https://github.com/transmute-industries/vc-jwt-test-suite/actions/workflows/sample.yml) | sample                                                               | [source](https://github.com/transmute-industries/vc-jwt-test-suite/tree/main/implementations/sample)    |
 
 
+## Test Report Generation
+
 ```mermaid
 graph LR
   Pages["GitHub Pages"]
+  Sample["Sample Implementation"]
   NewImp["+ New Implementation"]
 	Main --> Sample
   Main --> NewImp
