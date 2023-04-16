@@ -8,14 +8,14 @@ jobs:
       - run: |
           docker-compose run sample \
           credential create \
-          --key ./data/inputs/keys/key-0-p256.json \
-          --input ./data/inputs/claimsets/credential-0.json \
-          --output ./data/outputs/sample/credential-0--key-0-p256.json
+          --key /data/inputs/keys/key-0-p256.json \
+          --input /data/inputs/claimsets/credential-0.json \
+          --output /data/outputs/sample/credential-0--key-0-p256.json
       - run: |
           docker-compose run sample \
           credential verify \
-          --input ./data/outputs/sample/credential-0--key-0-p256.json \
-          --output ./data/outputs/sample/credential-0--key-0-p256.verified.json
+          --input /data/outputs/sample/credential-0--key-0-p256.json \
+          --output /data/outputs/sample/credential-0--key-0-p256.verified.json
           
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
