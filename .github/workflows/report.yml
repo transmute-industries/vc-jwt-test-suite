@@ -1,11 +1,10 @@
 name: Report
 on:
   push:
-    branches: [ main ]
+    branches: [ report ]
 jobs:
   sample:
     runs-on: ubuntu-latest
-    if: contains(github.event.head_commit.message, '[update report]')
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
