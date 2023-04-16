@@ -1,4 +1,4 @@
-# TODO
+# VC JWT 2.0 Test Suite
 
 [![Sample](https://github.com/transmute-industries/vc-jwt-test-suite/actions/workflows/sample.yml/badge.svg)](https://github.com/transmute-industries/vc-jwt-test-suite/actions/workflows/sample.yml)
 
