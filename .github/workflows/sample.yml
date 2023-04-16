@@ -3,17 +3,12 @@ on: [push]
 jobs:
   sample:
     runs-on: ubuntu-latest
-    env:
-      IMPLEMENTATION: sample
-      INPUT: /data/credentials/credential-0.json
-      OUTPUT: /data/implementations/${{ env.IMPLEMENTATION }}/credential-0--key-0-p256.json
-      KEY: /data/keys/key-0-p256.json
     steps:
       - uses: actions/checkout@v3
       - run: |
-          docker-compose run ${{ env.IMPLEMENTATION }} \
+          docker-compose run sample \
           credential create \
-          --input ${{ env.INPUT }} \
-          --output ${{ env.OUTPUT }} \
-          --key ${{ env.KEY }}
+          --input /data/credentials/credential-0.json \
+          --output /data/implementations/sample/credential-0--key-0-p256.json \
+          --key /data/keys/key-0-p256.json
         
