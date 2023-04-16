@@ -6,29 +6,29 @@
 
 ```sh
 docker-compose build
-
 ```
 
 ## Create Verifiable Credential
 
 ```sh
 IMPLEMENTATION=sample
-INPUT=/data/credentials/credential-0.json
-KEY=/data/keys/key-0-p256.json
-OUTPUT=/data/implementations/$IMPLEMENTATION/credential-0--key-0-p256.json
+KEY=/data/inputs/keys/key-0-p256.json
+INPUT=/data/inputs/claimsets/credential-0.json
+OUTPUT=/data/outputs/$IMPLEMENTATION/credential-0--key-0-p256.json
 
 docker-compose run $IMPLEMENTATION \
 credential create \
+--key $KEY \
 --input $INPUT \
 --output $OUTPUT \
---key $KEY
+--debug
 ```
 ## Verify Verifiable Credential
 
 ```sh
 IMPLEMENTATION=sample
-INPUT=/data/implementations/$IMPLEMENTATION/credential-0--key-0-p256.json
-OUTPUT=/data/implementations/$IMPLEMENTATION/credential-0--key-0-p256.verified.json
+INPUT=/data/outputs/$IMPLEMENTATION/credential-0--key-0-p256.json
+OUTPUT=/data/outputs/$IMPLEMENTATION/credential-0--key-0-p256.verified.json
 
 docker-compose run $IMPLEMENTATION \
 credential verify \

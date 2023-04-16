@@ -8,11 +8,12 @@ jobs:
       - run: |
           docker-compose run sample \
           credential create \
-          --input /data/credentials/credential-0.json \
-          --output /data/implementations/sample/credential-0--key-0-p256.json \
-          --key /data/keys/key-0-p256.json
+          --key inputs/keys/key-0-p256.json \
+          --input inputs/credentials/credential-0.json \
+          --output outputs/sample/credential-0--key-0-p256.json
+          
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update sample test results
-          file_pattern: 'data/implementations/sample/*'
+          file_pattern: 'outputs/sample/*'
           branch: main
