@@ -23,4 +23,4 @@ jobs:
         with:
           commit_message: 'chore(sample): [update report]'
           file_pattern: 'data/outputs/sample/*'
-          branch: report
+          branch: main

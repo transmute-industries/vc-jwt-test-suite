@@ -1,7 +1,7 @@
 name: Report
 on:
   push:
-    branches: [ report ]
+    branches: [ main ]
 jobs:
   sample:
     runs-on: ubuntu-latest
