@@ -12,14 +12,12 @@
 
 ```mermaid
 graph LR
-  Pages["GitHub Pages"]
   Sample["Sample Implementation"]
   NewImp["+ New Implementation"]
-	Main --> Sample
-  Main --> NewImp
-  Sample --> Report
-  NewImp  --> Report
-  Report --> Pages
+  Pages["GitHub Pages"]
+  Sample --> Main
+  NewImp  --> Main
+  Main --> Pages
 ```
 
 
