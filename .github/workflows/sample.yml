@@ -11,9 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-          docker-compose run $IMPLEMENTATION \
+          docker-compose run ${{ env.IMPLEMENTATION }} \
           credential create \
-          --input $INPUT \
-          --output $OUTPUT \
-          --key $KEY
+          --input ${{ env.INPUT }} \
+          --output ${{ env.OUTPUT }} \
+          --key ${{ env.KEY }}
         
