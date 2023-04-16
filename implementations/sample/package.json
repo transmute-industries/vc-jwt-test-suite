@@ -1,0 +1,15 @@
+{
+  "name": "sample",
+  "version": "0.0.0",
+  "description": "",
+  "main": "bin.js",
+  "dependencies": {
+    "yargs": "^17.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "cli": "node ./bin.js"
+  },
+  "author": "Orie Steele",
+  "license": "MIT"
+}
