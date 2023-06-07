@@ -11,7 +11,7 @@ jobs:
         with:
           node-version: 18
       - run: |
-          npm run report
+          npm run report:output:summarize
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: data
