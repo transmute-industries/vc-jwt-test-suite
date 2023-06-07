@@ -27,10 +27,13 @@ graph LR
 docker-compose build
 ```
 
-## TODO
-
-Use act...
+### Sample Docker CLI
 
 ```sh
-act -j sample --secret-file .env
+docker-compose run sample \
+credential create \
+--key /data/inputs/keys/private.key.ES384.json \
+--input /data/inputs/claimsets/_minimal-credential.json \
+--output /data/outputs/sample/_minimal-credential.proof.json \
+--debug
 ```

@@ -20,7 +20,6 @@ key generate --private --alg ES384 \
 # --output /data/outputs/sample/_minimal-credential.ES256.verified.json \
 # --debug
 
-
 # # Issue and Verify Minimal Presentation
 
 # docker-compose run sample \

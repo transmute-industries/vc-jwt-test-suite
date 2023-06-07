@@ -1,4 +1,5 @@
 const fs = require('fs')
+const path = require('path')
 const controller = require('../api/controller')
 module.exports = [
   'key [action]',
@@ -25,7 +26,8 @@ module.exports = [
       if (public){
         out = k.publicKeyJwk
       }
-      fs.writeFileSync(output, JSON.stringify(out, null, 2)) 
+      const outputPath = path.resolve(process.cwd(),output)
+      fs.writeFileSync(outputPath, JSON.stringify(out, null, 2)) 
     }
   },
 ]
