@@ -1,0 +1,26 @@
+{
+  "proof": {
+    "ES256": true
+  },
+  "schema": {
+    "https://www.w3.org/ns/credentials/v2": true
+  },
+  "protectedHeader": {
+    "alg": "ES256",
+    "iss": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6IlAtMjU2IiwiYWxnIjoiRVMyNTYiLCJ4IjoiNDR5Zzlkb2xVU2FWME9UU0xPZGhGbENLRGlLWmtwdEJkcGR0clVkanNSdyIsInkiOiJiWWJZNkVtdFRmN1o2d1drYnpOcVhVQXQ1S3g4QnZxYUl1WnNFZkRaSXJZIn0",
+    "kid": "#0",
+    "typ": "vp+ld+jwt",
+    "iat": 1686171686,
+    "nonce": "a4751a2e-6895-4e34-aa71-c3be512866f5",
+    "aud": "https://verifier.example"
+  },
+  "claimset": {
+    "@context": [
+      "https://www.w3.org/ns/credentials/v2"
+    ],
+    "type": [
+      "VerifiablePresentation"
+    ],
+    "holder": "did:jwk:eyJrdHkiOiJFQyIsImNydiI6IlAtMjU2IiwiYWxnIjoiRVMyNTYiLCJ4IjoiNDR5Zzlkb2xVU2FWME9UU0xPZGhGbENLRGlLWmtwdEJkcGR0clVkanNSdyIsInkiOiJiWWJZNkVtdFRmN1o2d1drYnpOcVhVQXQ1S3g4QnZxYUl1WnNFZkRaSXJZIn0"
+  }
+}
