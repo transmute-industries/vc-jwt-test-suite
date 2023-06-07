@@ -6,9 +6,6 @@ const moment = require('moment')
 
 const ajv = new Ajv({
   strict: false,
-  // In order to get strict mode back on, and warnings off,
-  // We may need these if statements in the future
-  // https://github.com/ajv-validator/ajv/issues/1417#issuecomment-1431435887
 })
 
 const VC_RDF_CLASS = 'VerifiableCredential'
@@ -63,6 +60,7 @@ const sign = async (claimset, privateKeyJwk) => {
     throw new Error('claimset is not defined.')
   }
   const { d, ...publicKeyJwk } = privateKeyJwk
+  // console.log(await publicKeyThumbprintUri(publicKeyJwk))
   const issuer = getIssuer(publicKeyJwk)
   const typ = claimsetToTyp(claimset)
   updateClaimset(issuer, claimset)
