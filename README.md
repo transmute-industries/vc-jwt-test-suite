@@ -2,12 +2,6 @@
 
 [![Report](https://github.com/transmute-industries/vc-jwt-test-suite/actions/workflows/report.yml/badge.svg)](https://github.com/transmute-industries/vc-jwt-test-suite/actions/workflows/report.yml)
 
-## Implementations 
-| Status                              | Name                                                                 | Link    |
-|-------------------------------------|----------------------------------------------------------------------|---------|
-| [![Sample](https://github.com/transmute-industries/vc-jwt-test-suite/actions/workflows/sample.yml/badge.svg)](https://github.com/transmute-industries/vc-jwt-test-suite/actions/workflows/sample.yml) | Sample Implementation                                                               | [source](https://github.com/transmute-industries/vc-jwt-test-suite/tree/main/implementations/sample)    |
-
-
 ## Test Report Generation
 
 ```mermaid
@@ -18,6 +12,15 @@ graph LR
   Sample --> Main
   NewImp  --> Main
   Main --> Pages
+```
+
+
+## Usage
+
+```sh
+npm i
+npm run report:output:generate
+npm run report:output:summarize
 ```
 
 
