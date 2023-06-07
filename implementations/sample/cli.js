@@ -18,10 +18,6 @@ const isVP = (claimset)=>{
   return claimset.type === VP_RDF_CLASS || claimset.type.includes(VP_RDF_CLASS)
 }
 
-const publicKeyThumbprintUri = async (publicKeyJwk)=>{
-  return jose.calculateJwkThumbprintUri(publicKeyJwk)
-}
-
 const getIssuer = (publicKeyJwk) => {
   const issuer = `did:jwk:${jose.base64url.encode(
     JSON.stringify(publicKeyJwk),

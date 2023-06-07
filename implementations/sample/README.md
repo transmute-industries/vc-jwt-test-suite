@@ -3,6 +3,8 @@
 
 This is a sample implementation.
 
+
+<!-- 
 ## Secure Credential
 
 ```sh
@@ -48,6 +50,13 @@ npm run cli -- presentation verify \
 
 ### Extensions
 
+## Generate a Key
+
+```sh
+npm run cli -- key generate --private --alg ES384 \
+--output './data/private.key.ES384.json'
+```
+
 
 ## Secure Credential with Schema
 
@@ -82,4 +91,4 @@ npm run cli -- presentation create \
 npm run cli -- presentation verify \
 --input './data/verifiable-presentation-with-holder.json' \
 --output './data/verifiable-presentation-with-holder.verified.json'
-```
+``` -->
