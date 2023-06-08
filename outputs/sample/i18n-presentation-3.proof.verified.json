@@ -10,7 +10,7 @@
     "iss": "did:jwk:eyJraWQiOiJ1cm46aWV0ZjpwYXJhbXM6b2F1dGg6andrLXRodW1icHJpbnQ6c2hhLTI1NjpvQmRmdmZDOXh6MF9BUXZRN3Y1MXlDWl9zeGp5NzVCTHJIek1ORjkyOWU4Iiwia3R5IjoiT0tQIiwiY3J2IjoiRWQyNTUxOSIsImFsZyI6IkVkRFNBIiwieCI6IjNicmNsb0I4aDRNWlVIbk9QUGlkSmwtSjduUlFJWHRTaFp3Z25mclp1T28ifQ",
     "kid": "#0",
     "typ": "vp+ld+jwt",
-    "iat": 1686250586,
+    "iat": 1686251112,
     "nonce": "a4751a2e-6895-4e34-aa71-c3be512866f5",
     "aud": "https://verifier.example"
   },

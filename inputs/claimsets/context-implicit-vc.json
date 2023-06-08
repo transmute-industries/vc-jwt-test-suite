@@ -1,0 +1,8 @@
+{
+  "type": ["VerifiableCredential"],
+  "issuer": "https://issuer.vendor.example",
+  "validFrom": "2023-06-07T21:14:14.148Z",
+  "credentialSubject": {
+    "id": "https://subject.vendor.example"
+  }
+}
