@@ -88,3 +88,15 @@ docker compose run sample presentation verify \
 --output /data/outputs/sample/_minimal-presentation.proof.verified.json \
 --debug
 ```
+
+### Interesting Cases
+
+#### Array Ordering
+
+- Arrays of Arrays
+
+#### i18N
+
+- https://util.unicode.org/UnicodeJsps/idna.jsp
+
+- IDNA2003 / IDNA2008 / UTS-46 
