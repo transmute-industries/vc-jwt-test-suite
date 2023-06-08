@@ -215,13 +215,14 @@ properties:
 
 const validateSchema = async (claimset) => {
   const schemas = {}
+  let validate = { errors: `claimset.type must include "${VC_RDF_CLASS}" or "${VP_RDF_CLASS}"` };
   let is_base_media_type_valid = false;
   if (isVC(claimset)){
-    const validate = ajv.compile(yaml.load(validateVC))
+    validate = ajv.compile(yaml.load(validateVC))
     is_base_media_type_valid = validate(claimset)
   }
   if (isVP(claimset)){
-    const validate = ajv.compile(yaml.load(validateVP))
+    validate = ajv.compile(yaml.load(validateVP))
     is_base_media_type_valid = validate(claimset)
   }
   if (!is_base_media_type_valid) {
