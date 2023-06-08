@@ -1,0 +1,20 @@
+{
+  "proof": {
+    "none": true
+  },
+  "schema": {
+    "https://www.w3.org/ns/credentials/v2": true
+  },
+  "unprotectedHeader": {
+    "alg": "none",
+    "typ": "vp+ld+jwt"
+  },
+  "claimset": {
+    "@context": [
+      "https://www.w3.org/ns/credentials/v2"
+    ],
+    "type": [
+      "VerifiablePresentation"
+    ]
+  }
+}
