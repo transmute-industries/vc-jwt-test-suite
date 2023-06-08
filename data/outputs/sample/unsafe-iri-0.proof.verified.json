@@ -1,0 +1,30 @@
+{
+  "proof": {
+    "EdDSA": true
+  },
+  "schema": {
+    "https://www.w3.org/ns/credentials/v2": true
+  },
+  "protectedHeader": {
+    "alg": "EdDSA",
+    "iss": "did:jwk:eyJraWQiOiJ1cm46aWV0ZjpwYXJhbXM6b2F1dGg6andrLXRodW1icHJpbnQ6c2hhLTI1NjpvQmRmdmZDOXh6MF9BUXZRN3Y1MXlDWl9zeGp5NzVCTHJIek1ORjkyOWU4Iiwia3R5IjoiT0tQIiwiY3J2IjoiRWQyNTUxOSIsImFsZyI6IkVkRFNBIiwieCI6IjNicmNsb0I4aDRNWlVIbk9QUGlkSmwtSjduUlFJWHRTaFp3Z25mclp1T28ifQ",
+    "kid": "#0",
+    "typ": "vc+ld+jwt",
+    "iat": 1686250603
+  },
+  "claimset": {
+    "@context": [
+      "https://www.w3.org/ns/credentials/v2",
+      "https://www.w3.org/ns/credentials/examples/v2"
+    ],
+    "type": [
+      "VerifiableCredential",
+      "ExampleUnsafeIRI"
+    ],
+    "issuer": "did:jwk:eyJraWQiOiJ1cm46aWV0ZjpwYXJhbXM6b2F1dGg6andrLXRodW1icHJpbnQ6c2hhLTI1NjpvQmRmdmZDOXh6MF9BUXZRN3Y1MXlDWl9zeGp5NzVCTHJIek1ORjkyOWU4Iiwia3R5IjoiT0tQIiwiY3J2IjoiRWQyNTUxOSIsImFsZyI6IkVkRFNBIiwieCI6IjNicmNsb0I4aDRNWlVIbk9QUGlkSmwtSjduUlFJWHRTaFp3Z25mclp1T28ifQ",
+    "validFrom": "2023-06-07T21:14:14.148Z",
+    "credentialSubject": {
+      "id": "c:\\$MFT"
+    }
+  }
+}
