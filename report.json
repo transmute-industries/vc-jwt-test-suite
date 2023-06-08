@@ -1,7 +1,7 @@
 {
   "sample": {
     "_minimal-credential.proof.json": {
-      "jwt": "eyJhbGciOiJFZERTQSIsImlzcyI6ImRpZDpqd2s6ZXlKcmFXUWlPaUoxY200NmFXVjBaanB3WVhKaGJYTTZiMkYxZEdnNmFuZHJMWFJvZFcxaWNISnBiblE2YzJoaExUSTFOanB2UW1SbWRtWkRPWGg2TUY5QlVYWlJOM1kxTVhsRFdsOXplR3A1TnpWQ1RISkllazFPUmpreU9XVTRJaXdpYTNSNUlqb2lUMHRRSWl3aVkzSjJJam9pUldReU5UVXhPU0lzSW1Gc1p5STZJa1ZrUkZOQklpd2llQ0k2SWpOaWNtTnNiMEk0YURSTldsVkliazlRVUdsa1Ntd3RTamR1VWxGSldIUlRhRnAzWjI1bWNscDFUMjhpZlEiLCJraWQiOiIjMCIsInR5cCI6InZjK2xkK2p3dCIsImlhdCI6MTY4NjI0NjQ0NX0.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiXSwidHlwZSI6WyJWZXJpZmlhYmxlQ3JlZGVudGlhbCJdLCJpc3N1ZXIiOiJkaWQ6andrOmV5SnJhV1FpT2lKMWNtNDZhV1YwWmpwd1lYSmhiWE02YjJGMWRHZzZhbmRyTFhSb2RXMWljSEpwYm5RNmMyaGhMVEkxTmpwdlFtUm1kbVpET1hoNk1GOUJVWFpSTjNZMU1YbERXbDl6ZUdwNU56VkNUSEpJZWsxT1Jqa3lPV1U0SWl3aWEzUjVJam9pVDB0UUlpd2lZM0oySWpvaVJXUXlOVFV4T1NJc0ltRnNaeUk2SWtWa1JGTkJJaXdpZUNJNklqTmljbU5zYjBJNGFEUk5XbFZJYms5UVVHbGtTbXd0U2pkdVVsRkpXSFJUYUZwM1oyNW1jbHAxVDI4aWZRIiwidmFsaWRGcm9tIjoiMjAyMy0wNi0wN1QyMToxNDoxNC4xNDhaIiwiY3JlZGVudGlhbFN1YmplY3QiOnsiaWQiOiJodHRwczovL3N1YmplY3QudmVuZG9yLmV4YW1wbGUifX0.K4v0Y77O83pRkeqohd0v9ST6YTrLZQbtPu5WNHwJ-Srrjwj7EwaWUT_msmxWPUNHz8KtSPLh7wuNfcRngUhzAA",
+      "jwt": "eyJhbGciOiJFZERTQSIsImlzcyI6ImRpZDpqd2s6ZXlKcmFXUWlPaUoxY200NmFXVjBaanB3WVhKaGJYTTZiMkYxZEdnNmFuZHJMWFJvZFcxaWNISnBiblE2YzJoaExUSTFOanB2UW1SbWRtWkRPWGg2TUY5QlVYWlJOM1kxTVhsRFdsOXplR3A1TnpWQ1RISkllazFPUmpreU9XVTRJaXdpYTNSNUlqb2lUMHRRSWl3aVkzSjJJam9pUldReU5UVXhPU0lzSW1Gc1p5STZJa1ZrUkZOQklpd2llQ0k2SWpOaWNtTnNiMEk0YURSTldsVkliazlRVUdsa1Ntd3RTamR1VWxGSldIUlRhRnAzWjI1bWNscDFUMjhpZlEiLCJraWQiOiIjMCIsInR5cCI6InZjK2xkK2p3dCIsImlhdCI6MTY4NjI0NzIzNX0.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiXSwidHlwZSI6WyJWZXJpZmlhYmxlQ3JlZGVudGlhbCJdLCJpc3N1ZXIiOiJkaWQ6andrOmV5SnJhV1FpT2lKMWNtNDZhV1YwWmpwd1lYSmhiWE02YjJGMWRHZzZhbmRyTFhSb2RXMWljSEpwYm5RNmMyaGhMVEkxTmpwdlFtUm1kbVpET1hoNk1GOUJVWFpSTjNZMU1YbERXbDl6ZUdwNU56VkNUSEpJZWsxT1Jqa3lPV1U0SWl3aWEzUjVJam9pVDB0UUlpd2lZM0oySWpvaVJXUXlOVFV4T1NJc0ltRnNaeUk2SWtWa1JGTkJJaXdpZUNJNklqTmljbU5zYjBJNGFEUk5XbFZJYms5UVVHbGtTbXd0U2pkdVVsRkpXSFJUYUZwM1oyNW1jbHAxVDI4aWZRIiwidmFsaWRGcm9tIjoiMjAyMy0wNi0wN1QyMToxNDoxNC4xNDhaIiwiY3JlZGVudGlhbFN1YmplY3QiOnsiaWQiOiJodHRwczovL3N1YmplY3QudmVuZG9yLmV4YW1wbGUifX0.aIU_pUSKvD3wNLIXSYZC7N87nr1zybnLQodkApA0_QELB6GBgRQjoRFCmHku_S6BAMKRd4mvpGl_7zn873V5CA",
       "proof": {
         "EdDSA": true
       },
@@ -13,7 +13,7 @@
         "iss": "did:jwk:eyJraWQiOiJ1cm46aWV0ZjpwYXJhbXM6b2F1dGg6andrLXRodW1icHJpbnQ6c2hhLTI1NjpvQmRmdmZDOXh6MF9BUXZRN3Y1MXlDWl9zeGp5NzVCTHJIek1ORjkyOWU4Iiwia3R5IjoiT0tQIiwiY3J2IjoiRWQyNTUxOSIsImFsZyI6IkVkRFNBIiwieCI6IjNicmNsb0I4aDRNWlVIbk9QUGlkSmwtSjduUlFJWHRTaFp3Z25mclp1T28ifQ",
         "kid": "#0",
         "typ": "vc+ld+jwt",
-        "iat": 1686246445
+        "iat": 1686247235
       },
       "claimset": {
         "@context": [
@@ -30,7 +30,7 @@
       }
     },
     "_minimal-presentation.proof.json": {
-      "jwt": "eyJhbGciOiJFZERTQSIsImlzcyI6ImRpZDpqd2s6ZXlKcmFXUWlPaUoxY200NmFXVjBaanB3WVhKaGJYTTZiMkYxZEdnNmFuZHJMWFJvZFcxaWNISnBiblE2YzJoaExUSTFOanB2UW1SbWRtWkRPWGg2TUY5QlVYWlJOM1kxTVhsRFdsOXplR3A1TnpWQ1RISkllazFPUmpreU9XVTRJaXdpYTNSNUlqb2lUMHRRSWl3aVkzSjJJam9pUldReU5UVXhPU0lzSW1Gc1p5STZJa1ZrUkZOQklpd2llQ0k2SWpOaWNtTnNiMEk0YURSTldsVkliazlRVUdsa1Ntd3RTamR1VWxGSldIUlRhRnAzWjI1bWNscDFUMjhpZlEiLCJraWQiOiIjMCIsInR5cCI6InZwK2xkK2p3dCIsImlhdCI6MTY4NjI0NjQ0Niwibm9uY2UiOiJhNDc1MWEyZS02ODk1LTRlMzQtYWE3MS1jM2JlNTEyODY2ZjUiLCJhdWQiOiJodHRwczovL3ZlcmlmaWVyLmV4YW1wbGUifQ.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiXSwidHlwZSI6WyJWZXJpZmlhYmxlUHJlc2VudGF0aW9uIl19.Gui9ss1f4fSnizscNtCyCXzkC2K634bEvmE5fn62Ps7Q8h_wFqKaiFH5RICej4uYWI4JBrxHkYiblSQcUqwSAw",
+      "jwt": "eyJhbGciOiJFZERTQSIsImlzcyI6ImRpZDpqd2s6ZXlKcmFXUWlPaUoxY200NmFXVjBaanB3WVhKaGJYTTZiMkYxZEdnNmFuZHJMWFJvZFcxaWNISnBiblE2YzJoaExUSTFOanB2UW1SbWRtWkRPWGg2TUY5QlVYWlJOM1kxTVhsRFdsOXplR3A1TnpWQ1RISkllazFPUmpreU9XVTRJaXdpYTNSNUlqb2lUMHRRSWl3aVkzSjJJam9pUldReU5UVXhPU0lzSW1Gc1p5STZJa1ZrUkZOQklpd2llQ0k2SWpOaWNtTnNiMEk0YURSTldsVkliazlRVUdsa1Ntd3RTamR1VWxGSldIUlRhRnAzWjI1bWNscDFUMjhpZlEiLCJraWQiOiIjMCIsInR5cCI6InZwK2xkK2p3dCIsImlhdCI6MTY4NjI0NzIzNywibm9uY2UiOiJhNDc1MWEyZS02ODk1LTRlMzQtYWE3MS1jM2JlNTEyODY2ZjUiLCJhdWQiOiJodHRwczovL3ZlcmlmaWVyLmV4YW1wbGUifQ.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiXSwidHlwZSI6WyJWZXJpZmlhYmxlUHJlc2VudGF0aW9uIl19.-4_CeYD0JjQL2_i1Yo1eeefnMabzPzp0XUAQSHn2X6f6PJxulXBIm_ug1tS6ZG4x1FUa22Mpt-RsaRNP4__lBA",
       "proof": {
         "EdDSA": true
       },
@@ -42,7 +42,7 @@
         "iss": "did:jwk:eyJraWQiOiJ1cm46aWV0ZjpwYXJhbXM6b2F1dGg6andrLXRodW1icHJpbnQ6c2hhLTI1NjpvQmRmdmZDOXh6MF9BUXZRN3Y1MXlDWl9zeGp5NzVCTHJIek1ORjkyOWU4Iiwia3R5IjoiT0tQIiwiY3J2IjoiRWQyNTUxOSIsImFsZyI6IkVkRFNBIiwieCI6IjNicmNsb0I4aDRNWlVIbk9QUGlkSmwtSjduUlFJWHRTaFp3Z25mclp1T28ifQ",
         "kid": "#0",
         "typ": "vp+ld+jwt",
-        "iat": 1686246446,
+        "iat": 1686247237,
         "nonce": "a4751a2e-6895-4e34-aa71-c3be512866f5",
         "aud": "https://verifier.example"
       },
@@ -80,7 +80,7 @@
       }
     },
     "alumni-credential-with-schema.proof.json": {
-      "jwt": "eyJhbGciOiJFZERTQSIsImlzcyI6ImRpZDpqd2s6ZXlKcmFXUWlPaUoxY200NmFXVjBaanB3WVhKaGJYTTZiMkYxZEdnNmFuZHJMWFJvZFcxaWNISnBiblE2YzJoaExUSTFOanB2UW1SbWRtWkRPWGg2TUY5QlVYWlJOM1kxTVhsRFdsOXplR3A1TnpWQ1RISkllazFPUmpreU9XVTRJaXdpYTNSNUlqb2lUMHRRSWl3aVkzSjJJam9pUldReU5UVXhPU0lzSW1Gc1p5STZJa1ZrUkZOQklpd2llQ0k2SWpOaWNtTnNiMEk0YURSTldsVkliazlRVUdsa1Ntd3RTamR1VWxGSldIUlRhRnAzWjI1bWNscDFUMjhpZlEiLCJraWQiOiIjMCIsInR5cCI6InZjK2xkK2p3dCIsImlhdCI6MTY4NjI0NjQ0OX0.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiLCJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvZXhhbXBsZXMvdjIiXSwiaWQiOiJodHRwOi8vdW5pdmVyc2l0eS5leGFtcGxlL2NyZWRlbnRpYWxzLzE4NzIiLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIiwiRXhhbXBsZUFsdW1uaUNyZWRlbnRpYWwiXSwiaXNzdWVyIjoiZGlkOmp3azpleUpyYVdRaU9pSjFjbTQ2YVdWMFpqcHdZWEpoYlhNNmIyRjFkR2c2YW5kckxYUm9kVzFpY0hKcGJuUTZjMmhoTFRJMU5qcHZRbVJtZG1aRE9YaDZNRjlCVVhaUk4zWTFNWGxEV2w5emVHcDVOelZDVEhKSWVrMU9Samt5T1dVNElpd2lhM1I1SWpvaVQwdFFJaXdpWTNKMklqb2lSV1F5TlRVeE9TSXNJbUZzWnlJNklrVmtSRk5CSWl3aWVDSTZJak5pY21Oc2IwSTRhRFJOV2xWSWJrOVFVR2xrU213dFNqZHVVbEZKV0hSVGFGcDNaMjVtY2xwMVQyOGlmUSIsInZhbGlkRnJvbSI6IjIwMTAtMDEtMDFUMTk6MjM6MjRaIiwiY3JlZGVudGlhbFNjaGVtYSI6eyJpZCI6Imh0dHBzOi8vdW5pdmVyc2l0eS5leGFtcGxlL3NjaGVtYXMvRXhhbXBsZUFsdW1uaUNyZWRlbnRpYWwiLCJ0eXBlIjoiSnNvblNjaGVtYSJ9LCJjcmVkZW50aWFsU3ViamVjdCI6eyJpZCI6ImRpZDpleGFtcGxlOmViZmViMWY3MTJlYmM2ZjFjMjc2ZTEyZWMyMSIsImFsdW1uaU9mIjp7ImlkIjoiZGlkOmV4YW1wbGU6YzI3NmUxMmVjMjFlYmZlYjFmNzEyZWJjNmYxIiwibmFtZSI6IkV4YW1wbGUgVW5pdmVyc2l0eSJ9fX0.S4H2Q8p5WsjvUe9DYG2d88oZIwnr0FNX2EiRtFQX1zzh5vXSB4R8ED9ckAaXbAF4rHDKXYI8Rt3DSmDH2j76BA",
+      "jwt": "eyJhbGciOiJFZERTQSIsImlzcyI6ImRpZDpqd2s6ZXlKcmFXUWlPaUoxY200NmFXVjBaanB3WVhKaGJYTTZiMkYxZEdnNmFuZHJMWFJvZFcxaWNISnBiblE2YzJoaExUSTFOanB2UW1SbWRtWkRPWGg2TUY5QlVYWlJOM1kxTVhsRFdsOXplR3A1TnpWQ1RISkllazFPUmpreU9XVTRJaXdpYTNSNUlqb2lUMHRRSWl3aVkzSjJJam9pUldReU5UVXhPU0lzSW1Gc1p5STZJa1ZrUkZOQklpd2llQ0k2SWpOaWNtTnNiMEk0YURSTldsVkliazlRVUdsa1Ntd3RTamR1VWxGSldIUlRhRnAzWjI1bWNscDFUMjhpZlEiLCJraWQiOiIjMCIsInR5cCI6InZjK2xkK2p3dCIsImlhdCI6MTY4NjI0NzI0MH0.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiLCJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvZXhhbXBsZXMvdjIiXSwiaWQiOiJodHRwOi8vdW5pdmVyc2l0eS5leGFtcGxlL2NyZWRlbnRpYWxzLzE4NzIiLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIiwiRXhhbXBsZUFsdW1uaUNyZWRlbnRpYWwiXSwiaXNzdWVyIjoiZGlkOmp3azpleUpyYVdRaU9pSjFjbTQ2YVdWMFpqcHdZWEpoYlhNNmIyRjFkR2c2YW5kckxYUm9kVzFpY0hKcGJuUTZjMmhoTFRJMU5qcHZRbVJtZG1aRE9YaDZNRjlCVVhaUk4zWTFNWGxEV2w5emVHcDVOelZDVEhKSWVrMU9Samt5T1dVNElpd2lhM1I1SWpvaVQwdFFJaXdpWTNKMklqb2lSV1F5TlRVeE9TSXNJbUZzWnlJNklrVmtSRk5CSWl3aWVDSTZJak5pY21Oc2IwSTRhRFJOV2xWSWJrOVFVR2xrU213dFNqZHVVbEZKV0hSVGFGcDNaMjVtY2xwMVQyOGlmUSIsInZhbGlkRnJvbSI6IjIwMTAtMDEtMDFUMTk6MjM6MjRaIiwiY3JlZGVudGlhbFNjaGVtYSI6eyJpZCI6Imh0dHBzOi8vdW5pdmVyc2l0eS5leGFtcGxlL3NjaGVtYXMvRXhhbXBsZUFsdW1uaUNyZWRlbnRpYWwiLCJ0eXBlIjoiSnNvblNjaGVtYSJ9LCJjcmVkZW50aWFsU3ViamVjdCI6eyJpZCI6ImRpZDpleGFtcGxlOmViZmViMWY3MTJlYmM2ZjFjMjc2ZTEyZWMyMSIsImFsdW1uaU9mIjp7ImlkIjoiZGlkOmV4YW1wbGU6YzI3NmUxMmVjMjFlYmZlYjFmNzEyZWJjNmYxIiwibmFtZSI6IkV4YW1wbGUgVW5pdmVyc2l0eSJ9fX0.rwEct3BKxqa_qDiwAxn_JB4lDF8j2sK3bhIcVXKBOKDetPF0Nqw8kUHwTq_A3MbVzyIueQdh5hRclNMD7dJaDA",
       "proof": {
         "EdDSA": true
       },
@@ -93,7 +93,7 @@
         "iss": "did:jwk:eyJraWQiOiJ1cm46aWV0ZjpwYXJhbXM6b2F1dGg6andrLXRodW1icHJpbnQ6c2hhLTI1NjpvQmRmdmZDOXh6MF9BUXZRN3Y1MXlDWl9zeGp5NzVCTHJIek1ORjkyOWU4Iiwia3R5IjoiT0tQIiwiY3J2IjoiRWQyNTUxOSIsImFsZyI6IkVkRFNBIiwieCI6IjNicmNsb0I4aDRNWlVIbk9QUGlkSmwtSjduUlFJWHRTaFp3Z25mclp1T28ifQ",
         "kid": "#0",
         "typ": "vc+ld+jwt",
-        "iat": 1686246449
+        "iat": 1686247240
       },
       "claimset": {
         "@context": [
@@ -121,7 +121,7 @@
       }
     },
     "alumni-credential.proof.json": {
-      "jwt": "eyJhbGciOiJFZERTQSIsImlzcyI6ImRpZDpqd2s6ZXlKcmFXUWlPaUoxY200NmFXVjBaanB3WVhKaGJYTTZiMkYxZEdnNmFuZHJMWFJvZFcxaWNISnBiblE2YzJoaExUSTFOanB2UW1SbWRtWkRPWGg2TUY5QlVYWlJOM1kxTVhsRFdsOXplR3A1TnpWQ1RISkllazFPUmpreU9XVTRJaXdpYTNSNUlqb2lUMHRRSWl3aVkzSjJJam9pUldReU5UVXhPU0lzSW1Gc1p5STZJa1ZrUkZOQklpd2llQ0k2SWpOaWNtTnNiMEk0YURSTldsVkliazlRVUdsa1Ntd3RTamR1VWxGSldIUlRhRnAzWjI1bWNscDFUMjhpZlEiLCJraWQiOiIjMCIsInR5cCI6InZjK2xkK2p3dCIsImlhdCI6MTY4NjI0NjQ1MX0.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiLCJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvZXhhbXBsZXMvdjIiXSwiaWQiOiJodHRwOi8vdW5pdmVyc2l0eS5leGFtcGxlL2NyZWRlbnRpYWxzLzE4NzIiLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIiwiRXhhbXBsZUFsdW1uaUNyZWRlbnRpYWwiXSwiaXNzdWVyIjoiZGlkOmp3azpleUpyYVdRaU9pSjFjbTQ2YVdWMFpqcHdZWEpoYlhNNmIyRjFkR2c2YW5kckxYUm9kVzFpY0hKcGJuUTZjMmhoTFRJMU5qcHZRbVJtZG1aRE9YaDZNRjlCVVhaUk4zWTFNWGxEV2w5emVHcDVOelZDVEhKSWVrMU9Samt5T1dVNElpd2lhM1I1SWpvaVQwdFFJaXdpWTNKMklqb2lSV1F5TlRVeE9TSXNJbUZzWnlJNklrVmtSRk5CSWl3aWVDSTZJak5pY21Oc2IwSTRhRFJOV2xWSWJrOVFVR2xrU213dFNqZHVVbEZKV0hSVGFGcDNaMjVtY2xwMVQyOGlmUSIsInZhbGlkRnJvbSI6IjIwMTAtMDEtMDFUMTk6MjM6MjRaIiwiY3JlZGVudGlhbFN1YmplY3QiOnsiaWQiOiJkaWQ6ZXhhbXBsZTplYmZlYjFmNzEyZWJjNmYxYzI3NmUxMmVjMjEiLCJhbHVtbmlPZiI6eyJpZCI6ImRpZDpleGFtcGxlOmMyNzZlMTJlYzIxZWJmZWIxZjcxMmViYzZmMSIsIm5hbWUiOiJFeGFtcGxlIFVuaXZlcnNpdHkifX19.aD1o4vPFw4g6BaME9gqgJfC_KGwRtThrAjnkYo2eNQgdKcEpZO3AGYNzjdnpNHLIaW5Res8FTZcRtFcWO29xBA",
+      "jwt": "eyJhbGciOiJFZERTQSIsImlzcyI6ImRpZDpqd2s6ZXlKcmFXUWlPaUoxY200NmFXVjBaanB3WVhKaGJYTTZiMkYxZEdnNmFuZHJMWFJvZFcxaWNISnBiblE2YzJoaExUSTFOanB2UW1SbWRtWkRPWGg2TUY5QlVYWlJOM1kxTVhsRFdsOXplR3A1TnpWQ1RISkllazFPUmpreU9XVTRJaXdpYTNSNUlqb2lUMHRRSWl3aVkzSjJJam9pUldReU5UVXhPU0lzSW1Gc1p5STZJa1ZrUkZOQklpd2llQ0k2SWpOaWNtTnNiMEk0YURSTldsVkliazlRVUdsa1Ntd3RTamR1VWxGSldIUlRhRnAzWjI1bWNscDFUMjhpZlEiLCJraWQiOiIjMCIsInR5cCI6InZjK2xkK2p3dCIsImlhdCI6MTY4NjI0NzI0MX0.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiLCJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvZXhhbXBsZXMvdjIiXSwiaWQiOiJodHRwOi8vdW5pdmVyc2l0eS5leGFtcGxlL2NyZWRlbnRpYWxzLzE4NzIiLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIiwiRXhhbXBsZUFsdW1uaUNyZWRlbnRpYWwiXSwiaXNzdWVyIjoiZGlkOmp3azpleUpyYVdRaU9pSjFjbTQ2YVdWMFpqcHdZWEpoYlhNNmIyRjFkR2c2YW5kckxYUm9kVzFpY0hKcGJuUTZjMmhoTFRJMU5qcHZRbVJtZG1aRE9YaDZNRjlCVVhaUk4zWTFNWGxEV2w5emVHcDVOelZDVEhKSWVrMU9Samt5T1dVNElpd2lhM1I1SWpvaVQwdFFJaXdpWTNKMklqb2lSV1F5TlRVeE9TSXNJbUZzWnlJNklrVmtSRk5CSWl3aWVDSTZJak5pY21Oc2IwSTRhRFJOV2xWSWJrOVFVR2xrU213dFNqZHVVbEZKV0hSVGFGcDNaMjVtY2xwMVQyOGlmUSIsInZhbGlkRnJvbSI6IjIwMTAtMDEtMDFUMTk6MjM6MjRaIiwiY3JlZGVudGlhbFN1YmplY3QiOnsiaWQiOiJkaWQ6ZXhhbXBsZTplYmZlYjFmNzEyZWJjNmYxYzI3NmUxMmVjMjEiLCJhbHVtbmlPZiI6eyJpZCI6ImRpZDpleGFtcGxlOmMyNzZlMTJlYzIxZWJmZWIxZjcxMmViYzZmMSIsIm5hbWUiOiJFeGFtcGxlIFVuaXZlcnNpdHkifX19.M55oEoQpTIr1lQLn6tp-avsQWcOfASTBqLFeUVWKHrqV1LFuly48iDt32v85J_SG5YPDzx2wr9UqUS3L5DfdDA",
       "proof": {
         "EdDSA": true
       },
@@ -133,7 +133,7 @@
         "iss": "did:jwk:eyJraWQiOiJ1cm46aWV0ZjpwYXJhbXM6b2F1dGg6andrLXRodW1icHJpbnQ6c2hhLTI1NjpvQmRmdmZDOXh6MF9BUXZRN3Y1MXlDWl9zeGp5NzVCTHJIek1ORjkyOWU4Iiwia3R5IjoiT0tQIiwiY3J2IjoiRWQyNTUxOSIsImFsZyI6IkVkRFNBIiwieCI6IjNicmNsb0I4aDRNWlVIbk9QUGlkSmwtSjduUlFJWHRTaFp3Z25mclp1T28ifQ",
         "kid": "#0",
         "typ": "vc+ld+jwt",
-        "iat": 1686246451
+        "iat": 1686247241
       },
       "claimset": {
         "@context": [
@@ -157,7 +157,7 @@
       }
     },
     "alumni-presentation-with-holder.proof.json": {
-      "jwt": "eyJhbGciOiJFZERTQSIsImlzcyI6ImRpZDpqd2s6ZXlKcmFXUWlPaUoxY200NmFXVjBaanB3WVhKaGJYTTZiMkYxZEdnNmFuZHJMWFJvZFcxaWNISnBiblE2YzJoaExUSTFOanB2UW1SbWRtWkRPWGg2TUY5QlVYWlJOM1kxTVhsRFdsOXplR3A1TnpWQ1RISkllazFPUmpreU9XVTRJaXdpYTNSNUlqb2lUMHRRSWl3aVkzSjJJam9pUldReU5UVXhPU0lzSW1Gc1p5STZJa1ZrUkZOQklpd2llQ0k2SWpOaWNtTnNiMEk0YURSTldsVkliazlRVUdsa1Ntd3RTamR1VWxGSldIUlRhRnAzWjI1bWNscDFUMjhpZlEiLCJraWQiOiIjMCIsInR5cCI6InZwK2xkK2p3dCIsImlhdCI6MTY4NjI0NjQ1Miwibm9uY2UiOiJhNDc1MWEyZS02ODk1LTRlMzQtYWE3MS1jM2JlNTEyODY2ZjUiLCJhdWQiOiJodHRwczovL3ZlcmlmaWVyLmV4YW1wbGUifQ.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiXSwidHlwZSI6WyJWZXJpZmlhYmxlUHJlc2VudGF0aW9uIl0sImhvbGRlciI6ImRpZDpqd2s6ZXlKcmFXUWlPaUoxY200NmFXVjBaanB3WVhKaGJYTTZiMkYxZEdnNmFuZHJMWFJvZFcxaWNISnBiblE2YzJoaExUSTFOanB2UW1SbWRtWkRPWGg2TUY5QlVYWlJOM1kxTVhsRFdsOXplR3A1TnpWQ1RISkllazFPUmpreU9XVTRJaXdpYTNSNUlqb2lUMHRRSWl3aVkzSjJJam9pUldReU5UVXhPU0lzSW1Gc1p5STZJa1ZrUkZOQklpd2llQ0k2SWpOaWNtTnNiMEk0YURSTldsVkliazlRVUdsa1Ntd3RTamR1VWxGSldIUlRhRnAzWjI1bWNscDFUMjhpZlEiLCJ2ZXJpZmlhYmxlQ3JlZGVudGlhbCI6WyJodHRwOi8vdW5pdmVyc2l0eS5leGFtcGxlL2NyZWRlbnRpYWxzLzE4NzIiXX0.YpGtovCE5xdtJjuecyHLBTsrcs2sV71PKszduSe1XGH-MdZZJBGVeqiN34Ty-8-pu2r6GGAzPRLn-nZfDQjDDg",
+      "jwt": "eyJhbGciOiJFZERTQSIsImlzcyI6ImRpZDpqd2s6ZXlKcmFXUWlPaUoxY200NmFXVjBaanB3WVhKaGJYTTZiMkYxZEdnNmFuZHJMWFJvZFcxaWNISnBiblE2YzJoaExUSTFOanB2UW1SbWRtWkRPWGg2TUY5QlVYWlJOM1kxTVhsRFdsOXplR3A1TnpWQ1RISkllazFPUmpreU9XVTRJaXdpYTNSNUlqb2lUMHRRSWl3aVkzSjJJam9pUldReU5UVXhPU0lzSW1Gc1p5STZJa1ZrUkZOQklpd2llQ0k2SWpOaWNtTnNiMEk0YURSTldsVkliazlRVUdsa1Ntd3RTamR1VWxGSldIUlRhRnAzWjI1bWNscDFUMjhpZlEiLCJraWQiOiIjMCIsInR5cCI6InZwK2xkK2p3dCIsImlhdCI6MTY4NjI0NzI0Mywibm9uY2UiOiJhNDc1MWEyZS02ODk1LTRlMzQtYWE3MS1jM2JlNTEyODY2ZjUiLCJhdWQiOiJodHRwczovL3ZlcmlmaWVyLmV4YW1wbGUifQ.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiXSwidHlwZSI6WyJWZXJpZmlhYmxlUHJlc2VudGF0aW9uIl0sImhvbGRlciI6ImRpZDpqd2s6ZXlKcmFXUWlPaUoxY200NmFXVjBaanB3WVhKaGJYTTZiMkYxZEdnNmFuZHJMWFJvZFcxaWNISnBiblE2YzJoaExUSTFOanB2UW1SbWRtWkRPWGg2TUY5QlVYWlJOM1kxTVhsRFdsOXplR3A1TnpWQ1RISkllazFPUmpreU9XVTRJaXdpYTNSNUlqb2lUMHRRSWl3aVkzSjJJam9pUldReU5UVXhPU0lzSW1Gc1p5STZJa1ZrUkZOQklpd2llQ0k2SWpOaWNtTnNiMEk0YURSTldsVkliazlRVUdsa1Ntd3RTamR1VWxGSldIUlRhRnAzWjI1bWNscDFUMjhpZlEiLCJ2ZXJpZmlhYmxlQ3JlZGVudGlhbCI6WyJodHRwOi8vdW5pdmVyc2l0eS5leGFtcGxlL2NyZWRlbnRpYWxzLzE4NzIiXX0.SOJqzx_4FsNKpP8Dkwmpur7Kpteh8JWXkdRphhkVv2vDfpREJFYUj2neOG97Y5uSAJnUXCFlYwkqFPiXVVveAg",
       "proof": {
         "EdDSA": true
       },
@@ -169,7 +169,7 @@
         "iss": "did:jwk:eyJraWQiOiJ1cm46aWV0ZjpwYXJhbXM6b2F1dGg6andrLXRodW1icHJpbnQ6c2hhLTI1NjpvQmRmdmZDOXh6MF9BUXZRN3Y1MXlDWl9zeGp5NzVCTHJIek1ORjkyOWU4Iiwia3R5IjoiT0tQIiwiY3J2IjoiRWQyNTUxOSIsImFsZyI6IkVkRFNBIiwieCI6IjNicmNsb0I4aDRNWlVIbk9QUGlkSmwtSjduUlFJWHRTaFp3Z25mclp1T28ifQ",
         "kid": "#0",
         "typ": "vp+ld+jwt",
-        "iat": 1686246452,
+        "iat": 1686247243,
         "nonce": "a4751a2e-6895-4e34-aa71-c3be512866f5",
         "aud": "https://verifier.example"
       },
@@ -184,6 +184,168 @@
         "verifiableCredential": [
           "http://university.example/credentials/1872"
         ]
+      }
+    },
+    "i18n-presentation-0.proof.json": {
+      "jwt": "eyJhbGciOiJFZERTQSIsImlzcyI6ImRpZDpqd2s6ZXlKcmFXUWlPaUoxY200NmFXVjBaanB3WVhKaGJYTTZiMkYxZEdnNmFuZHJMWFJvZFcxaWNISnBiblE2YzJoaExUSTFOanB2UW1SbWRtWkRPWGg2TUY5QlVYWlJOM1kxTVhsRFdsOXplR3A1TnpWQ1RISkllazFPUmpreU9XVTRJaXdpYTNSNUlqb2lUMHRRSWl3aVkzSjJJam9pUldReU5UVXhPU0lzSW1Gc1p5STZJa1ZrUkZOQklpd2llQ0k2SWpOaWNtTnNiMEk0YURSTldsVkliazlRVUdsa1Ntd3RTamR1VWxGSldIUlRhRnAzWjI1bWNscDFUMjhpZlEiLCJraWQiOiIjMCIsInR5cCI6InZwK2xkK2p3dCIsImlhdCI6MTY4NjI0NzI0NCwibm9uY2UiOiJhNDc1MWEyZS02ODk1LTRlMzQtYWE3MS1jM2JlNTEyODY2ZjUiLCJhdWQiOiJodHRwczovL3ZlcmlmaWVyLmV4YW1wbGUifQ.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiXSwidHlwZSI6WyJWZXJpZmlhYmxlUHJlc2VudGF0aW9uIl0sImlkIjoi4oK5LmV4YW1wbGUifQ.44v-sg6cP-lanWgB88t_IfveHxid-gd3DzUOcM7nTI29JK4NxACW53yCQeN0MIQn7DVxZszcvFtLx6O3hlVbCQ",
+      "proof": {
+        "EdDSA": true
+      },
+      "schema": {
+        "https://www.w3.org/ns/credentials/v2": true
+      },
+      "protectedHeader": {
+        "alg": "EdDSA",
+        "iss": "did:jwk:eyJraWQiOiJ1cm46aWV0ZjpwYXJhbXM6b2F1dGg6andrLXRodW1icHJpbnQ6c2hhLTI1NjpvQmRmdmZDOXh6MF9BUXZRN3Y1MXlDWl9zeGp5NzVCTHJIek1ORjkyOWU4Iiwia3R5IjoiT0tQIiwiY3J2IjoiRWQyNTUxOSIsImFsZyI6IkVkRFNBIiwieCI6IjNicmNsb0I4aDRNWlVIbk9QUGlkSmwtSjduUlFJWHRTaFp3Z25mclp1T28ifQ",
+        "kid": "#0",
+        "typ": "vp+ld+jwt",
+        "iat": 1686247244,
+        "nonce": "a4751a2e-6895-4e34-aa71-c3be512866f5",
+        "aud": "https://verifier.example"
+      },
+      "claimset": {
+        "@context": [
+          "https://www.w3.org/ns/credentials/v2"
+        ],
+        "type": [
+          "VerifiablePresentation"
+        ],
+        "id": "₹.example"
+      }
+    },
+    "i18n-presentation-1.proof.json": {
+      "jwt": "eyJhbGciOiJFZERTQSIsImlzcyI6ImRpZDpqd2s6ZXlKcmFXUWlPaUoxY200NmFXVjBaanB3WVhKaGJYTTZiMkYxZEdnNmFuZHJMWFJvZFcxaWNISnBiblE2YzJoaExUSTFOanB2UW1SbWRtWkRPWGg2TUY5QlVYWlJOM1kxTVhsRFdsOXplR3A1TnpWQ1RISkllazFPUmpreU9XVTRJaXdpYTNSNUlqb2lUMHRRSWl3aVkzSjJJam9pUldReU5UVXhPU0lzSW1Gc1p5STZJa1ZrUkZOQklpd2llQ0k2SWpOaWNtTnNiMEk0YURSTldsVkliazlRVUdsa1Ntd3RTamR1VWxGSldIUlRhRnAzWjI1bWNscDFUMjhpZlEiLCJraWQiOiIjMCIsInR5cCI6InZwK2xkK2p3dCIsImlhdCI6MTY4NjI0NzI0Niwibm9uY2UiOiJhNDc1MWEyZS02ODk1LTRlMzQtYWE3MS1jM2JlNTEyODY2ZjUiLCJhdWQiOiJodHRwczovL3ZlcmlmaWVyLmV4YW1wbGUifQ.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiXSwidHlwZSI6WyJWZXJpZmlhYmxlUHJlc2VudGF0aW9uIl0sImlkIjoiZmHDny5kZSJ9.TW650bPAENqGql6lehpzyc00u8OXtVyn7zftYZebB5w5QMK14U9REKpVG69JJFPVCGlBL3kXruxehk2T7lduCQ",
+      "proof": {
+        "EdDSA": true
+      },
+      "schema": {
+        "https://www.w3.org/ns/credentials/v2": true
+      },
+      "protectedHeader": {
+        "alg": "EdDSA",
+        "iss": "did:jwk:eyJraWQiOiJ1cm46aWV0ZjpwYXJhbXM6b2F1dGg6andrLXRodW1icHJpbnQ6c2hhLTI1NjpvQmRmdmZDOXh6MF9BUXZRN3Y1MXlDWl9zeGp5NzVCTHJIek1ORjkyOWU4Iiwia3R5IjoiT0tQIiwiY3J2IjoiRWQyNTUxOSIsImFsZyI6IkVkRFNBIiwieCI6IjNicmNsb0I4aDRNWlVIbk9QUGlkSmwtSjduUlFJWHRTaFp3Z25mclp1T28ifQ",
+        "kid": "#0",
+        "typ": "vp+ld+jwt",
+        "iat": 1686247246,
+        "nonce": "a4751a2e-6895-4e34-aa71-c3be512866f5",
+        "aud": "https://verifier.example"
+      },
+      "claimset": {
+        "@context": [
+          "https://www.w3.org/ns/credentials/v2"
+        ],
+        "type": [
+          "VerifiablePresentation"
+        ],
+        "id": "faß.de"
+      }
+    },
+    "i18n-presentation-2.proof.json": {
+      "jwt": "eyJhbGciOiJFZERTQSIsImlzcyI6ImRpZDpqd2s6ZXlKcmFXUWlPaUoxY200NmFXVjBaanB3WVhKaGJYTTZiMkYxZEdnNmFuZHJMWFJvZFcxaWNISnBiblE2YzJoaExUSTFOanB2UW1SbWRtWkRPWGg2TUY5QlVYWlJOM1kxTVhsRFdsOXplR3A1TnpWQ1RISkllazFPUmpreU9XVTRJaXdpYTNSNUlqb2lUMHRRSWl3aVkzSjJJam9pUldReU5UVXhPU0lzSW1Gc1p5STZJa1ZrUkZOQklpd2llQ0k2SWpOaWNtTnNiMEk0YURSTldsVkliazlRVUdsa1Ntd3RTamR1VWxGSldIUlRhRnAzWjI1bWNscDFUMjhpZlEiLCJraWQiOiIjMCIsInR5cCI6InZwK2xkK2p3dCIsImlhdCI6MTY4NjI0NzI0Nywibm9uY2UiOiJhNDc1MWEyZS02ODk1LTRlMzQtYWE3MS1jM2JlNTEyODY2ZjUiLCJhdWQiOiJodHRwczovL3ZlcmlmaWVyLmV4YW1wbGUifQ.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiXSwidHlwZSI6WyJWZXJpZmlhYmxlUHJlc2VudGF0aW9uIl0sImlkIjoi77-9LmNvbSJ9.2HKgJ03ss831i0SfgOFUzvcOEBgiNL0gIoQ1pOQaA99GZvcrNhOR_qrFo1FYf55kA5FhyyqrVCOSNG6xUKGlBw",
+      "proof": {
+        "EdDSA": true
+      },
+      "schema": {
+        "https://www.w3.org/ns/credentials/v2": true
+      },
+      "protectedHeader": {
+        "alg": "EdDSA",
+        "iss": "did:jwk:eyJraWQiOiJ1cm46aWV0ZjpwYXJhbXM6b2F1dGg6andrLXRodW1icHJpbnQ6c2hhLTI1NjpvQmRmdmZDOXh6MF9BUXZRN3Y1MXlDWl9zeGp5NzVCTHJIek1ORjkyOWU4Iiwia3R5IjoiT0tQIiwiY3J2IjoiRWQyNTUxOSIsImFsZyI6IkVkRFNBIiwieCI6IjNicmNsb0I4aDRNWlVIbk9QUGlkSmwtSjduUlFJWHRTaFp3Z25mclp1T28ifQ",
+        "kid": "#0",
+        "typ": "vp+ld+jwt",
+        "iat": 1686247247,
+        "nonce": "a4751a2e-6895-4e34-aa71-c3be512866f5",
+        "aud": "https://verifier.example"
+      },
+      "claimset": {
+        "@context": [
+          "https://www.w3.org/ns/credentials/v2"
+        ],
+        "type": [
+          "VerifiablePresentation"
+        ],
+        "id": "�.com"
+      }
+    },
+    "i18n-presentation-3.proof.json": {
+      "jwt": "eyJhbGciOiJFZERTQSIsImlzcyI6ImRpZDpqd2s6ZXlKcmFXUWlPaUoxY200NmFXVjBaanB3WVhKaGJYTTZiMkYxZEdnNmFuZHJMWFJvZFcxaWNISnBiblE2YzJoaExUSTFOanB2UW1SbWRtWkRPWGg2TUY5QlVYWlJOM1kxTVhsRFdsOXplR3A1TnpWQ1RISkllazFPUmpreU9XVTRJaXdpYTNSNUlqb2lUMHRRSWl3aVkzSjJJam9pUldReU5UVXhPU0lzSW1Gc1p5STZJa1ZrUkZOQklpd2llQ0k2SWpOaWNtTnNiMEk0YURSTldsVkliazlRVUdsa1Ntd3RTamR1VWxGSldIUlRhRnAzWjI1bWNscDFUMjhpZlEiLCJraWQiOiIjMCIsInR5cCI6InZwK2xkK2p3dCIsImlhdCI6MTY4NjI0NzI0OSwibm9uY2UiOiJhNDc1MWEyZS02ODk1LTRlMzQtYWE3MS1jM2JlNTEyODY2ZjUiLCJhdWQiOiJodHRwczovL3ZlcmlmaWVyLmV4YW1wbGUifQ.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiXSwidHlwZSI6WyJWZXJpZmlhYmxlUHJlc2VudGF0aW9uIl0sImlkIjoiyKFvZy5kZSJ9.wuvZKy6XXEArSGMmKCQFKT7FE_2AEUj58RTOOF7L3zZmunqsxhCP8XXT7OJb2CGVoIFMsAtXOxeTekaz7ssXBA",
+      "proof": {
+        "EdDSA": true
+      },
+      "schema": {
+        "https://www.w3.org/ns/credentials/v2": true
+      },
+      "protectedHeader": {
+        "alg": "EdDSA",
+        "iss": "did:jwk:eyJraWQiOiJ1cm46aWV0ZjpwYXJhbXM6b2F1dGg6andrLXRodW1icHJpbnQ6c2hhLTI1NjpvQmRmdmZDOXh6MF9BUXZRN3Y1MXlDWl9zeGp5NzVCTHJIek1ORjkyOWU4Iiwia3R5IjoiT0tQIiwiY3J2IjoiRWQyNTUxOSIsImFsZyI6IkVkRFNBIiwieCI6IjNicmNsb0I4aDRNWlVIbk9QUGlkSmwtSjduUlFJWHRTaFp3Z25mclp1T28ifQ",
+        "kid": "#0",
+        "typ": "vp+ld+jwt",
+        "iat": 1686247249,
+        "nonce": "a4751a2e-6895-4e34-aa71-c3be512866f5",
+        "aud": "https://verifier.example"
+      },
+      "claimset": {
+        "@context": [
+          "https://www.w3.org/ns/credentials/v2"
+        ],
+        "type": [
+          "VerifiablePresentation"
+        ],
+        "id": "ȡog.de"
+      }
+    },
+    "i18n-presentation-4.proof.json": {
+      "jwt": "eyJhbGciOiJFZERTQSIsImlzcyI6ImRpZDpqd2s6ZXlKcmFXUWlPaUoxY200NmFXVjBaanB3WVhKaGJYTTZiMkYxZEdnNmFuZHJMWFJvZFcxaWNISnBiblE2YzJoaExUSTFOanB2UW1SbWRtWkRPWGg2TUY5QlVYWlJOM1kxTVhsRFdsOXplR3A1TnpWQ1RISkllazFPUmpreU9XVTRJaXdpYTNSNUlqb2lUMHRRSWl3aVkzSjJJam9pUldReU5UVXhPU0lzSW1Gc1p5STZJa1ZrUkZOQklpd2llQ0k2SWpOaWNtTnNiMEk0YURSTldsVkliazlRVUdsa1Ntd3RTamR1VWxGSldIUlRhRnAzWjI1bWNscDFUMjhpZlEiLCJraWQiOiIjMCIsInR5cCI6InZwK2xkK2p3dCIsImlhdCI6MTY4NjI0NzI1MCwibm9uY2UiOiJhNDc1MWEyZS02ODk1LTRlMzQtYWE3MS1jM2JlNTEyODY2ZjUiLCJhdWQiOiJodHRwczovL3ZlcmlmaWVyLmV4YW1wbGUifQ.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiXSwidHlwZSI6WyJWZXJpZmlhYmxlUHJlc2VudGF0aW9uIl0sImlkIjoi4piVLmRlIn0.msi1xqYKbxJsHHBZuRbrmsbrr8AVRlljsElqhEjVoW-v_4tF5WrTJYk-hcTW8r6Ozq5uH61Yk22_uchRJckACg",
+      "proof": {
+        "EdDSA": true
+      },
+      "schema": {
+        "https://www.w3.org/ns/credentials/v2": true
+      },
+      "protectedHeader": {
+        "alg": "EdDSA",
+        "iss": "did:jwk:eyJraWQiOiJ1cm46aWV0ZjpwYXJhbXM6b2F1dGg6andrLXRodW1icHJpbnQ6c2hhLTI1NjpvQmRmdmZDOXh6MF9BUXZRN3Y1MXlDWl9zeGp5NzVCTHJIek1ORjkyOWU4Iiwia3R5IjoiT0tQIiwiY3J2IjoiRWQyNTUxOSIsImFsZyI6IkVkRFNBIiwieCI6IjNicmNsb0I4aDRNWlVIbk9QUGlkSmwtSjduUlFJWHRTaFp3Z25mclp1T28ifQ",
+        "kid": "#0",
+        "typ": "vp+ld+jwt",
+        "iat": 1686247250,
+        "nonce": "a4751a2e-6895-4e34-aa71-c3be512866f5",
+        "aud": "https://verifier.example"
+      },
+      "claimset": {
+        "@context": [
+          "https://www.w3.org/ns/credentials/v2"
+        ],
+        "type": [
+          "VerifiablePresentation"
+        ],
+        "id": "☕.de"
+      }
+    },
+    "i18n-presentation-5.proof.json": {
+      "jwt": "eyJhbGciOiJFZERTQSIsImlzcyI6ImRpZDpqd2s6ZXlKcmFXUWlPaUoxY200NmFXVjBaanB3WVhKaGJYTTZiMkYxZEdnNmFuZHJMWFJvZFcxaWNISnBiblE2YzJoaExUSTFOanB2UW1SbWRtWkRPWGg2TUY5QlVYWlJOM1kxTVhsRFdsOXplR3A1TnpWQ1RISkllazFPUmpreU9XVTRJaXdpYTNSNUlqb2lUMHRRSWl3aVkzSjJJam9pUldReU5UVXhPU0lzSW1Gc1p5STZJa1ZrUkZOQklpd2llQ0k2SWpOaWNtTnNiMEk0YURSTldsVkliazlRVUdsa1Ntd3RTamR1VWxGSldIUlRhRnAzWjI1bWNscDFUMjhpZlEiLCJraWQiOiIjMCIsInR5cCI6InZwK2xkK2p3dCIsImlhdCI6MTY4NjI0NzI1Miwibm9uY2UiOiJhNDc1MWEyZS02ODk1LTRlMzQtYWE3MS1jM2JlNTEyODY2ZjUiLCJhdWQiOiJodHRwczovL3ZlcmlmaWVyLmV4YW1wbGUifQ.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiXSwidHlwZSI6WyJWZXJpZmlhYmxlUHJlc2VudGF0aW9uIl0sImlkIjoi8J-noPCfko4uZXhhbXBsZSJ9.m7HhdMOIk6QbL-v2WCpp3hW9hI4w-5v2Olyvywlg2EdhHeM6pXTdrxpNOCoi4rS63Yb6DyqzFyL4xukI8trnBg",
+      "proof": {
+        "EdDSA": true
+      },
+      "schema": {
+        "https://www.w3.org/ns/credentials/v2": true
+      },
+      "protectedHeader": {
+        "alg": "EdDSA",
+        "iss": "did:jwk:eyJraWQiOiJ1cm46aWV0ZjpwYXJhbXM6b2F1dGg6andrLXRodW1icHJpbnQ6c2hhLTI1NjpvQmRmdmZDOXh6MF9BUXZRN3Y1MXlDWl9zeGp5NzVCTHJIek1ORjkyOWU4Iiwia3R5IjoiT0tQIiwiY3J2IjoiRWQyNTUxOSIsImFsZyI6IkVkRFNBIiwieCI6IjNicmNsb0I4aDRNWlVIbk9QUGlkSmwtSjduUlFJWHRTaFp3Z25mclp1T28ifQ",
+        "kid": "#0",
+        "typ": "vp+ld+jwt",
+        "iat": 1686247252,
+        "nonce": "a4751a2e-6895-4e34-aa71-c3be512866f5",
+        "aud": "https://verifier.example"
+      },
+      "claimset": {
+        "@context": [
+          "https://www.w3.org/ns/credentials/v2"
+        ],
+        "type": [
+          "VerifiablePresentation"
+        ],
+        "id": "🧠💎.example"
       }
     }
   }
