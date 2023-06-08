@@ -1,6 +1,26 @@
 const jose = require('jose')
 
+const VC_RDF_CLASS = 'VerifiableCredential'
+const VP_RDF_CLASS = 'VerifiablePresentation'
+
+const isVC = (claimset) => {
+  return claimset.type === VC_RDF_CLASS || claimset.type.includes(VC_RDF_CLASS)
+}
+const isVP = (claimset) => {
+  return claimset.type === VP_RDF_CLASS || claimset.type.includes(VP_RDF_CLASS)
+}
+
+const claimsetToTyp = (claimset) => {
+  if (claimset.type === VC_RDF_CLASS || claimset.type.includes(VC_RDF_CLASS)) {
+    return 'vc+ld+jwt'
+  } else {
+    return 'vp+ld+jwt'
+  }
+}
+
 const detachedHeaderParams = { b64: false, crit: ['b64'] }
+
+
 
 const generate = async (alg, extractable = true) => {
   const { publicKey, privateKey } = await jose.generateKeyPair(alg, {
@@ -43,8 +63,9 @@ const signer = async (privateKeyJwk) => {
     iss: publicKeyToDid(publicKewJwk),
     kid: `#0`,
     sign: async (bytes) => {
+      const typ = claimsetToTyp(JSON.parse(new TextDecoder().decode(bytes)))
       const jws = await new jose.FlattenedSign(bytes)
-        .setProtectedHeader({ alg, ...detachedHeaderParams })
+        .setProtectedHeader({ alg, typ, ...detachedHeaderParams })
         .sign(privateKey)
       return `${jws.protected}..${jws.signature}`
     },
@@ -116,12 +137,16 @@ const dereferencePublicKey = async (didUrl) =>
     JSON.parse(jose.base64url.decode(didUrl.split(':')[2].split('#')[0])),
   )
 
-const publicKeyToKid = async (publicKeyJwk) => {
-  const kid = await jose.calculateJwkThumbprintUri(publicKeyJwk);
-  return '#' + kid;
+const publicKeyToUri = async (publicKeyJwk) => {
+  return jose.calculateJwkThumbprintUri(publicKeyJwk);
 };
 
-const key = { generate, format: formatJwk, did: publicKeyToDid, kid: publicKeyToKid, dereferencePublicKey }
+const publicKeyToKid = async (publicKeyJwk) => {
+  return '#' + publicKeyToUri(publicKeyJwk);
+};
+
+
+const key = { generate, format: formatJwk, uri: publicKeyToUri, did: publicKeyToDid, kid: publicKeyToKid, dereferencePublicKey }
 
 const controller = { key, signer, verifier }
 
