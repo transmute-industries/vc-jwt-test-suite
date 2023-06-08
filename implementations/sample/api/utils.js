@@ -1,34 +1,17 @@
-const fs = require('fs')
 const jose = require('jose')
-const Ajv = require('ajv')
-const yaml = require('js-yaml')
-const moment = require('moment')
 
-const ajv = new Ajv({
-  strict: false,
-})
+const fs = require('fs')
+const controller = require('./controller')
 
 const VC_RDF_CLASS = 'VerifiableCredential'
 const VP_RDF_CLASS = 'VerifiablePresentation'
 
-const isVC = (claimset)=>{
+const isVC = (claimset) => {
   return claimset.type === VC_RDF_CLASS || claimset.type.includes(VC_RDF_CLASS)
 }
-const isVP = (claimset)=>{
+const isVP = (claimset) => {
   return claimset.type === VP_RDF_CLASS || claimset.type.includes(VP_RDF_CLASS)
 }
-
-const getIssuer = (publicKeyJwk) => {
-  const issuer = `did:jwk:${jose.base64url.encode(
-    JSON.stringify(publicKeyJwk),
-  )}`
-  return issuer
-}
-
-const getPublicKey = async (vm) =>
-  jose.importJWK(
-    JSON.parse(jose.base64url.decode(vm.split(':')[2].split('#')[0])),
-  )
 
 const claimsetToTyp = (claimset) => {
   if (claimset.type === VC_RDF_CLASS || claimset.type.includes(VC_RDF_CLASS)) {
@@ -55,30 +38,11 @@ const updateClaimset = (issuer, claimset) => {
   }
 }
 
-const sign = async (claimset, privateKeyJwk) => {
-  if (!claimset){
-    throw new Error('claimset is not defined.')
+const validateProof = async ({ protectedHeader, claimset }) => {
+  return {
+    [protectedHeader.alg]:
+      protectedHeader !== undefined && claimset !== undefined,
   }
-  const { d, ...publicKeyJwk } = privateKeyJwk
-  // console.log(await publicKeyThumbprintUri(publicKeyJwk))
-  const issuer = getIssuer(publicKeyJwk)
-  const typ = claimsetToTyp(claimset)
-  updateClaimset(issuer, claimset)
-  const header = {
-    alg: privateKeyJwk.alg,
-    iss: issuer,
-    kid: '#0',
-    typ,
-    iat: moment().unix()
-  }
-  if (typ === 'vp+ld+jwt'){
-    header.nonce = 'a4751a2e-6895-4e34-aa71-c3be512866f5'
-    header.aud = 'https://verifier.example'
-  }
-  const jwt = await new jose.CompactSign(Buffer.from(JSON.stringify(claimset)))
-    .setProtectedHeader(header)
-    .sign(await jose.importJWK(privateKeyJwk))
-  return jwt
 }
 
 const unsecured = (claimset) => {
@@ -89,52 +53,66 @@ const unsecured = (claimset) => {
   )}.${jose.base64url.encode(JSON.stringify(claimset))}.`
 }
 
-const loadJsonFile = (absolutePath) => {
-  return JSON.parse(fs.readFileSync(absolutePath).toString())
+const sign = async (claimset, privateKeyJwk) => {
+  if (!claimset) {
+    throw new Error('claimset is not defined.')
+  }
+  if (!privateKeyJwk) {
+    return unsecured(claimset)
+  }
+  const { d, ...publicKeyJwk } = privateKeyJwk
+  const issuer = controller.key.did(publicKeyJwk)
+  const typ = claimsetToTyp(claimset)
+  updateClaimset(issuer, claimset)
+  const header = {
+    alg: privateKeyJwk.alg,
+    iss: issuer,
+    kid: '#0',
+    typ,
+    iat: moment().unix(),
+  }
+  if (typ === 'vp+ld+jwt') {
+    header.nonce = 'a4751a2e-6895-4e34-aa71-c3be512866f5'
+    header.aud = 'https://verifier.example'
+  }
+  const jwt = await new jose.CompactSign(Buffer.from(JSON.stringify(claimset)))
+    .setProtectedHeader(header)
+    .sign(await jose.importJWK(privateKeyJwk))
+  return jwt
 }
 
-const requireFile = (input) => {
-  try {
-    return loadJsonFile(input)
-  } catch (e) {
-    console.error('Could not load json from path: ' + input)
-    return
+const verify = async (jwt) => {
+  const unprotectedHeader = jose.decodeProtectedHeader(jwt)
+  const { alg, iss, kid } = unprotectedHeader
+  if (alg === 'none') {
+    const claimset = jose.decodeJwt(jwt)
+    const proof = { none: true }
+    const status = await validateStatus(claimset)
+    const schema = await validateSchema(claimset)
+    return JSON.parse(
+      JSON.stringify({
+        proof,
+        status,
+        schema,
+        unprotectedHeader,
+        claimset,
+      }),
+    )
   }
-}
-
-const requireInput = (input, key) => {
-  const data = {}
-  if (input) {
-    data.inputJson = requireFile(input)
-  }
-  if (key) {
-    data.keyJson = requireFile(key)
-  }
-  return data
-}
-
-const createVerifiableCredential = async ({ input, output, key }) => {
-  const { inputJson, keyJson } = requireInput(input, key)
-  const outputJson = { jwt: await sign(inputJson, keyJson) }
-  fs.writeFileSync(output, JSON.stringify(outputJson, null, 2))
-}
-
-const createVerifiablePresentation = async ({ input, output, key }) => {
-  let outputJson
-  if (key) {
-    const { inputJson, keyJson } = requireInput(input, key)
-    outputJson = { jwt: await sign(inputJson, keyJson) }
-  } else {
-    const { inputJson } = requireInput(input)
-    outputJson = { jwt: await unsecured(inputJson) }
-  }
-  fs.writeFileSync(output, JSON.stringify(outputJson, null, 2))
-}
-
-const validateProof = async ({ protectedHeader, claimset }) => {
-  return {
-    [protectedHeader.alg]: protectedHeader !== undefined && claimset !== undefined,
-  }
+  const publicKey = await controller.key.dereferencePublicKey(iss + kid)
+  const { payload, protectedHeader } = await jose.jwtVerify(jwt, publicKey)
+  const proof = await validateProof({ protectedHeader, claimset: payload })
+  const status = await validateStatus(payload)
+  const schema = await validateSchema(payload)
+  return JSON.parse(
+    JSON.stringify({
+      proof,
+      status,
+      schema,
+      protectedHeader,
+      claimset: payload,
+    }),
+  )
 }
 
 const validateVC = `
@@ -215,13 +193,15 @@ properties:
 
 const validateSchema = async (claimset) => {
   const schemas = {}
-  let validate = { errors: `claimset.type must include "${VC_RDF_CLASS}" or "${VP_RDF_CLASS}"` };
-  let is_base_media_type_valid = false;
-  if (isVC(claimset)){
+  let validate = {
+    errors: `claimset.type must include "${VC_RDF_CLASS}" or "${VP_RDF_CLASS}"`,
+  }
+  let is_base_media_type_valid = false
+  if (isVC(claimset)) {
     validate = ajv.compile(yaml.load(validateVC))
     is_base_media_type_valid = validate(claimset)
   }
-  if (isVP(claimset)){
+  if (isVP(claimset)) {
     validate = ajv.compile(yaml.load(validateVP))
     is_base_media_type_valid = validate(claimset)
   }
@@ -230,10 +210,14 @@ const validateSchema = async (claimset) => {
   }
   schemas['https://www.w3.org/ns/credentials/v2'] = is_base_media_type_valid
   let is_credential_schema_valid = true
-  if (claimset.credentialSchema && claimset.credentialSchema.id === 'https://university.example/schemas/ExampleAlumniCredential') {
+  if (
+    claimset.credentialSchema &&
+    claimset.credentialSchema.id ===
+      'https://university.example/schemas/ExampleAlumniCredential'
+  ) {
     const validate = ajv.compile(yaml.load(validateExampleAlumniCredential))
     is_credential_schema_valid = validate(claimset)
-    schemas[claimset.credentialSchema.id] = is_credential_schema_valid 
+    schemas[claimset.credentialSchema.id] = is_credential_schema_valid
   }
   return schemas
 }
@@ -245,40 +229,75 @@ const validateStatus = async (claimset) => {
   return { ['is_suspended']: false, ['is_revoked']: false }
 }
 
-const verify = async (jwt) => {
-  const { iss, kid } = jose.decodeProtectedHeader(jwt)
-  const publicKey = await getPublicKey(iss + kid)
-  const { payload, protectedHeader } = await jose.jwtVerify(jwt, publicKey)
-  const proof = await validateProof({ protectedHeader, claimset: payload })
-  const status = await validateStatus(payload)
-  const schema = await validateSchema(payload)
-  return JSON.parse(
-    JSON.stringify({
-      proof,
-      status,
-      schema,
-      protectedHeader,
-      claimset: payload,
-    }),
-  )
+const Ajv = require('ajv')
+const yaml = require('js-yaml')
+const moment = require('moment')
+
+const ajv = new Ajv({
+  strict: false,
+})
+
+
+
+
+const loadJsonFile = (absolutePath) => {
+  return JSON.parse(fs.readFileSync(absolutePath).toString())
 }
 
-const verifyVerifiableCredential = async ({ input, output }) => {
-  const { jwt } = requireFile(input)
-  const result = await verify(jwt)
-  fs.writeFileSync(output, JSON.stringify(result, null, 2))
+const requireFile = (input) => {
+  try {
+    return loadJsonFile(input)
+  } catch (e) {
+    console.error(e)
+    console.error('Could not load json from path: ' + input)
+    return
+  }
 }
 
-const verifyVerifiablePresentation = async ({ input, output }) => {
-  const { jwt } = requireFile(input)
-  const result = await verify(jwt)
-  fs.writeFileSync(output, JSON.stringify(result, null, 2))
+const requireInput = (input, key) => {
+  const data = {}
+  if (input) {
+    data.inputJson = requireFile(input)
+  }
+  if (key) {
+    data.keyJson = requireFile(key)
+  }
+  return data
 }
 
-module.exports = {
-  createVerifiableCredential,
-  createVerifiablePresentation,
-  verifyVerifiableCredential,
-  verifyVerifiablePresentation,
+const dataUri = (data, contentType = `application/vc+ld+json`) => {
+  if (contentType === 'application/vc+ld+json') {
+    return `data:${contentType};base64,${Buffer.from(
+      JSON.stringify(data),
+    ).toString('base64')}`
+  }
+  if (contentType === 'application/vc+ld+jwt') {
+    return `data:${contentType};base64,${Buffer.from(data).toString('base64')}`
+  }
+  if (contentType === 'application/vp+ld+json') {
+    return `data:${contentType};base64,${Buffer.from(
+      JSON.stringify(data),
+    ).toString('base64')}`
+  }
+  if (contentType === 'application/vp+ld+jwt') {
+    return `data:${contentType};base64,${Buffer.from(data).toString('base64')}`
+  }
+  return null
+}
+
+const utils = {
+  requireInput,
+  isVC,
+  isVP,
+  claimsetToTyp,
+  updateClaimset,
+  validateProof,
+  validateSchema,
+  validateStatus,
+  unsecured,
+  sign,
   verify,
+  dataUri,
 }
+
+module.exports = utils

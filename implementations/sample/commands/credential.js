@@ -1,4 +1,7 @@
-const cli = require("../cli");
+const fs = require('fs')
+const path = require('path')
+const utils = require('../api/utils')
+const credential = require('../api/credential')
 module.exports = [
   'credential [action]',
   'verifiable credential',
@@ -20,19 +23,25 @@ module.exports = [
   },
   async (argv) => {
     if (argv.action === 'create') {
-      await cli.createVerifiableCredential({
-        input: argv.input,
-        output: argv.output,
-        format: argv.format,
-        key: argv.key,
+      const { input, key, output } = argv
+      const { inputJson, keyJson } = utils.requireInput(
+        path.resolve(process.cwd(), input),
+        path.resolve(process.cwd(), key),
+      )
+      const outputJson = await credential.issue({
+        claimset: inputJson,
+        key: keyJson,
       })
+      fs.writeFileSync(output, JSON.stringify(outputJson, null, 2))
     }
     if (argv.action === 'verify') {
-      await cli.verifyVerifiableCredential({
-        input: argv.input,
-        output: argv.output,
-        format: argv.format,
+      const { input, output } = argv
+      const { inputJson } = utils.requireInput(input)
+      const { jwt } = inputJson
+      const outputJson = await credential.verify({
+        jwt,
       })
+      fs.writeFileSync(output, JSON.stringify(outputJson, null, 2))
     }
   },
 ]

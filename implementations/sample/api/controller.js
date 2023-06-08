@@ -111,13 +111,17 @@ const publicKeyToDid = (publicKeyJwk) => {
   return id
 }
 
+const dereferencePublicKey = async (didUrl) =>
+  jose.importJWK(
+    JSON.parse(jose.base64url.decode(didUrl.split(':')[2].split('#')[0])),
+  )
 
 const publicKeyToKid = async (publicKeyJwk) => {
   const kid = await jose.calculateJwkThumbprintUri(publicKeyJwk);
   return '#' + kid;
 };
 
-const key = { generate, format: formatJwk, did: publicKeyToDid, kid: publicKeyToKid }
+const key = { generate, format: formatJwk, did: publicKeyToDid, kid: publicKeyToKid, dereferencePublicKey }
 
 const controller = { key, signer, verifier }
 
