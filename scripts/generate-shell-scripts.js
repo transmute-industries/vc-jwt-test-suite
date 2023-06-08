@@ -24,10 +24,11 @@ const implementationName = 'sample';
   fs.readdirSync(inputKeysDir).forEach((keyFileName)=>{
    fs.readdirSync(inputClaimsDir).forEach((claimsetFileName)=>{
     const claimset = JSON.parse(fs.readFileSync(`${inputClaimsDir}/${claimsetFileName}`).toString());
+
+    const proofFileName = claimsetFileName.replace('.json', '.proof.json')
+    const verifiedFileName = proofFileName.replace('.proof.json', '.proof.verified.json')
+    
     if (isVC(claimset)){
-      // console.log('VC', claimset)
-      const proofFileName = claimsetFileName.replace('.json', '.proof.json')
-      const verifiedFileName = proofFileName.replace('.proof.json', '.proof.verified.json')
       scriptContent += `docker compose run ${implementationName} credential create \
 --input '/data/inputs/claimsets/${claimsetFileName}' \
 --output '/data/outputs/${implementationName}/${proofFileName}' \
@@ -41,8 +42,6 @@ const implementationName = 'sample';
     }
     if (isVP(claimset)){
       if (claimsetFileName.includes('unsecured')){
-        // console.log('unsecured VP', claimset)
-        const proofFileName = claimsetFileName.replace('.json', '.proof.json')
         scriptContent += `docker compose run ${implementationName} presentation create \
 --input '/data/inputs/claimsets/${claimsetFileName}' \
 --output '/data/outputs/${implementationName}/${proofFileName}'
@@ -52,7 +51,6 @@ const implementationName = 'sample';
 --output '/data/outputs/${implementationName}/${verifiedFileName}'
 `
       } else {
-        // console.log('secured VP', claimset)
         const proofFileName = claimsetFileName.replace('.json', '.proof.json')
         const verifiedFileName = proofFileName.replace('.proof.json', '.proof.verified.json')
         scriptContent += `docker compose run ${implementationName} presentation create \
