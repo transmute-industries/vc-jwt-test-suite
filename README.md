@@ -14,7 +14,6 @@ graph LR
   Main --> Pages
 ```
 
-
 ## Usage
 
 ```sh
@@ -23,6 +22,16 @@ npm run report:output:generate
 npm run report:output:summarize
 ```
 
+### Workflow
+
+Add files to [keys](./data/inputs/keys/) and [claimsets](./data/inputs/claimsets/).
+
+Run regenerate and shove to update report:
+
+```sh
+npm run regenerate
+npm run shove
+```
 
 ## Docker Basics
 
