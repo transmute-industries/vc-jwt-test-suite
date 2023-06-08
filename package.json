@@ -1,7 +1,9 @@
 {
   "scripts": {
+    "report:prepare": "node ./scripts/generate-shell-scripts.js",
     "report:output:generate": "./scripts/generate-report.sh",
     "report:output:summarize": "node ./scripts/generate-report.js",
+    "regenerate": "npm run report:prepare ; npm run report:output:generate ; npm run report:output:summarize",
     "shove": "git add -A; git commit -m ':rainbow::rocket:'; git push origin main"
   }
 }
