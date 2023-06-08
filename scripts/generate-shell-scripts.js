@@ -28,12 +28,12 @@ const implementationName = 'sample';
       // console.log('VC', claimset)
       const proofFileName = claimsetFileName.replace('.json', '.proof.json')
       const verifiedFileName = proofFileName.replace('.proof.json', '.proof.verified.json')
-      scriptContent += `docker-compose run ${implementationName} credential create \
+      scriptContent += `docker compose run ${implementationName} credential create \
 --input '/data/inputs/claimsets/${claimsetFileName}' \
 --output '/data/outputs/${implementationName}/${proofFileName}' \
 --key '/data/inputs/keys/${keyFileName}'
 `
-      scriptContent += `docker-compose run ${implementationName} credential verify \
+      scriptContent += `docker compose run ${implementationName} credential verify \
 --input '/data/outputs/${implementationName}/${proofFileName}' \
 --output '/data/outputs/${implementationName}/${verifiedFileName}' \
 --key '/data/inputs/keys/${keyFileName}'
@@ -43,11 +43,11 @@ const implementationName = 'sample';
       if (claimsetFileName.includes('unsecured')){
         // console.log('unsecured VP', claimset)
         const proofFileName = claimsetFileName.replace('.json', '.proof.json')
-        scriptContent += `docker-compose run ${implementationName} presentation create \
+        scriptContent += `docker compose run ${implementationName} presentation create \
 --input '/data/inputs/claimsets/${claimsetFileName}' \
 --output '/data/outputs/${implementationName}/${proofFileName}'
 `
-        scriptContent += `docker-compose run ${implementationName} presentation verify \
+        scriptContent += `docker compose run ${implementationName} presentation verify \
 --input '/data/outputs/${implementationName}/${proofFileName}' \
 --output '/data/outputs/${implementationName}/${verifiedFileName}'
 `
@@ -55,12 +55,12 @@ const implementationName = 'sample';
         // console.log('secured VP', claimset)
         const proofFileName = claimsetFileName.replace('.json', '.proof.json')
         const verifiedFileName = proofFileName.replace('.proof.json', '.proof.verified.json')
-        scriptContent += `docker-compose run ${implementationName} presentation create \
+        scriptContent += `docker compose run ${implementationName} presentation create \
 --input '/data/inputs/claimsets/${claimsetFileName}' \
 --output '/data/outputs/${implementationName}/${proofFileName}' \
 --key '/data/inputs/keys/${keyFileName}'
 `
-      scriptContent += `docker-compose run ${implementationName} presentation verify \
+      scriptContent += `docker compose run ${implementationName} presentation verify \
 --input '/data/outputs/${implementationName}/${proofFileName}' \
 --output '/data/outputs/${implementationName}/${verifiedFileName}' \
 --key '/data/inputs/keys/${keyFileName}'

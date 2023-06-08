@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const controller = require('../api/controller')
 module.exports = [
-  'key [action]',
+  'controller [action]',
   'controller key',
   {
     alg: {

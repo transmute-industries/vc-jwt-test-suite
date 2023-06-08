@@ -27,7 +27,7 @@ npm run report:output:summarize
 ## Docker Basics
 
 ```sh
-docker-compose build
+docker compose build
 ```
 
 ### Sample CLI
@@ -35,7 +35,7 @@ docker-compose build
 #### Generate Key
 
 ```sh
-docker-compose run sample key generate --private --alg ES384 \
+docker compose run sample key generate --private --alg ES384 \
 --output /data/inputs/keys/private.key.ES384.json \
 --debug
 ```
@@ -43,7 +43,7 @@ docker-compose run sample key generate --private --alg ES384 \
 #### Issue Credential
 
 ```sh
-docker-compose run sample credential create \
+docker compose run sample credential create \
 --key /data/inputs/keys/private.key.ES384.json \
 --input /data/inputs/claimsets/_minimal-credential.json \
 --output /data/outputs/sample/_minimal-credential.proof.json \
@@ -53,7 +53,7 @@ docker-compose run sample credential create \
 #### Verify Credential
 
 ```sh
-docker-compose run sample credential verify \
+docker compose run sample credential verify \
 --key /data/inputs/keys/private.key.ES384.json \
 --input /data/outputs/sample/_minimal-credential.proof.json \
 --output /data/outputs/sample/_minimal-credential.proof.verified.json \
@@ -63,7 +63,7 @@ docker-compose run sample credential verify \
 #### Issue Presentation
 
 ```sh
-docker-compose run sample presentation create \
+docker compose run sample presentation create \
 --key /data/inputs/keys/private.key.ES384.json \
 --input /data/inputs/claimsets/_minimal-presentation.json \
 --output /data/outputs/sample/_minimal-presentation.proof.json \
@@ -73,7 +73,7 @@ docker-compose run sample presentation create \
 #### Verify Presentation
 
 ```sh
-docker-compose run sample presentation verify \
+docker compose run sample presentation verify \
 --key /data/inputs/keys/private.key.ES384.json \
 --input /data/outputs/sample/_minimal-presentation.proof.json \
 --output /data/outputs/sample/_minimal-presentation.proof.verified.json \
