@@ -1,0 +1,32 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://www.w3.org/ns/credentials/examples/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "ExampleVerifiableMatrix"
+  ],
+  "issuer": "https://issuer.vendor.example",
+  "validFrom": "2023-06-07T21:14:14.148Z",
+  "credentialSubject": {
+    "id": "https://ai.example",
+    "matrix": [
+      [
+        0.3327630056551032,
+        0.5779295508699736,
+        0.5630046534310356
+      ],
+      [
+        0.49173194085602345,
+        0.2869432739505404,
+        0.7774640263828732
+      ],
+      [
+        0.43624793080251134,
+        0.98520902759069,
+        0.024849246153434645
+      ]
+    ]
+  }
+}
